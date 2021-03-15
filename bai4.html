@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="SealCommerce">
+    <meta name="author" content="">
+    <title>SealCommerce-B4</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <!--  header  -->
+    <header class="header">
+    </header>
+    <!--  end header  -->
+
+    <!--  main homepage  -->
+    <section>
+    </section>
+    <!-- end main homepage  -->
+
+    <!--  footer  -->
+    <footer>
+    </footer>
+    <!--  end footer  -->
+    <!--  end popup  -->
+
+    <script src="js/jquery.js" type="text/javascript"></script>
+    <script src="js/main.js" type="text/javascript"></script>
+    <script>
+        //sắp xếp dãy số theo thứ tự tăng dần.
+        function sortArray1(arr) {
+            console.log(arr.sort(function (a, b) { return a - b }));
+        }
+        sortArray1([1, 25, 7, -7, -3, 12, -22, 0])
+
+        //Sắp xếp dãy số tăng dần theo giá trị tuyệt đối 
+        function sortArray2(arr) {
+            arrLength = arr.length;
+            var newArr = [];
+            for(i=0; i<arrLength ; i++){
+                for(j=0; j<arrLength ; j++){
+                    var flag = arr[i];
+                    if(Math.abs(arr[i])<Math.abs(arr[j])){
+                        arr[i] = arr[j];
+                        arr[j] = flag;
+                    }else if(Math.abs(arr[i]) == Math.abs(arr[j]) && arr[i] < arr[j]){
+                        flag = arr[j];
+                        arr[j] = arr[i];
+                        arr[i] = flag;
+                    }
+                }
+            }
+            console.log(arr);
+        }
+        // function sortArray2(arr) {
+        //     console.log(arr.sort(function (a, b) { return Math.abs(a) - Math.abs(b) }));
+        // }
+        sortArray2([1, 25, 7, -7, -3, 12, -22, 0]);
+    </script>
+</body>
+
+</html>

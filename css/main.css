@@ -1,0 +1,473 @@
+@font-face {
+  font-family: "Philosopher";
+  src: url("../font/Philosopher/Philosopher-Bold.ttf") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../font/Poppins/Poppins-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../font/Poppins/Poppins-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../font/Poppins/Poppins-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../font/Montserrat/Montserrat-Regular.otf") format("opentype");
+  font-weight: 400;
+}
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  color: #272727;
+  font-size: 1rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  margin: auto;
+}
+
+ul {
+  padding: 0;
+}
+ul li {
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, p {
+  display: block;
+  margin: 0;
+  font-weight: 300;
+  line-height: 1.4;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+  object-fit: cover;
+}
+
+.link {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1450px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+@media (min-width: 1599px) {
+  .container {
+    max-width: 1440px;
+  }
+}
+@media (min-width: 1750px) {
+  .container {
+    max-width: 1600px;
+  }
+}
+.fz36 {
+  font-size: 36px;
+}
+
+.fz30 {
+  font-size: 30px;
+}
+
+.fz20 {
+  font-size: 20px;
+}
+
+.fz18 {
+  font-size: 18px;
+}
+
+@media (max-width: 1199px) {
+  .fz36 {
+    font-size: 30px;
+  }
+
+  .fz30 {
+    font-size: 24px;
+  }
+
+  .fz20 {
+    font-size: 16px;
+  }
+
+  .fz18 {
+    font-size: 18px;
+  }
+}
+.group-product {
+  margin: 5rem auto;
+  text-align: center;
+}
+
+.title-wrap {
+  margin-bottom: 3rem;
+}
+
+.title-group {
+  font-family: "Philosopher", sans-serif;
+  font-weight: bold;
+  line-height: 1.25;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+.descript-title {
+  line-height: 1.5;
+  color: #8d7070;
+}
+
+.list-product {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: -2.5rem;
+}
+
+.product-item {
+  flex: 0 0 auto;
+  width: calc((100% - 48px) / 3);
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.product-item .image {
+  position: relative;
+  overflow: hidden;
+}
+.product-item .image img {
+  width: 100%;
+  transition: 0.3s;
+}
+.product-item .image:hover img {
+  transform: scale(1.03);
+}
+.product-item .info-product {
+  padding: 1.5rem 1rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.product-item .info-product .top-information {
+  margin-bottom: 1rem;
+}
+.product-item .info-product .title {
+  position: relative;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 1.25rem;
+  display: inline-block;
+}
+.product-item .info-product .title::after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 100%;
+  left: 0;
+  bottom: -4px;
+  background: #ef5350;
+}
+.product-item .info-product .short-descript {
+  line-height: 1.5rem;
+}
+.product-item .info-product .bottom-information {
+  text-transform: uppercase;
+}
+.product-item .info-product .old-price {
+  text-decoration: line-through;
+  color: #9d9d9d;
+  line-height: 0.9;
+  margin-bottom: 0.5rem;
+}
+.product-item .info-product .new-price {
+  line-height: 0.9;
+}
+.product-item .info-product .new-price span {
+  font-weight: bold;
+}
+.product-item .btn-primary {
+  margin-top: 1rem;
+}
+
+.btn-primary {
+  display: inline-block;
+  padding: 9px 32px;
+  background: linear-gradient(180deg, #ef5350 0%, #fb774f 100%);
+  box-shadow: 0px 4px 8px rgba(95, 0, 0, 0.16);
+  border-radius: 35px;
+  font-weight: 600;
+  color: #fff;
+  font-size: 20px;
+}
+
+@media (max-width: 1199px) {
+  .group-product {
+    margin: 2rem auto;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    padding: 0 1.5rem;
+  }
+
+  .product-item {
+    width: 100%;
+  }
+
+  .title-wrap {
+    margin-bottom: 1.5em;
+  }
+
+  .list-product {
+    margin-bottom: -1.5rem;
+  }
+
+  .product-item {
+    margin-bottom: 0.5rem;
+  }
+  .product-item .info-product {
+    padding: 1rem 0;
+  }
+  .product-item .info-product .top-information {
+    margin-bottom: 0.5rem;
+  }
+  .product-item .info-product .old-price,
+.product-item .info-product .new-price {
+    line-height: 1.25;
+  }
+  .product-item .btn-primary {
+    margin-top: 0.5rem;
+  }
+}
+#popup {
+  background: #d9c82d;
+}
+
+.popup {
+  visibility: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, calc(-50% - 30px));
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+  z-index: 999;
+  opacity: 0;
+  transition: 0.5s;
+}
+.popup.v2 {
+  transition: 0s !important;
+}
+.popup .popup-content {
+  border-radius: 10px;
+  width: 539px;
+  border: 3px solid #fff;
+  overflow: hidden;
+  display: flex;
+}
+.popup .p-left {
+  flex: 0 0 auto;
+  width: 164px;
+  background: linear-gradient(53.63deg, #666e95 55.99%, #00a0b1 98.05%);
+  text-align: center;
+}
+.popup .p-left img {
+  width: 114px;
+  margin-top: 84px;
+}
+.popup .p-right {
+  flex-grow: 1;
+  padding: 30px 14px 24px 28px;
+  background: linear-gradient(0deg, #d6e8f5 0%, #ffffff 100%);
+  text-align: center;
+}
+.popup .p-right .title {
+  font-size: 38.6px;
+  line-height: 1.22;
+  color: #00a0b1;
+  margin-bottom: 7px;
+}
+.popup .p-right .content {
+  font-size: 8px;
+  line-height: 1.25;
+  color: #6d5147;
+  margin-bottom: 28px;
+}
+.popup .p-right .form-group {
+  margin-bottom: 16px;
+}
+.popup .p-right .form-group .form-control {
+  width: 100%;
+  max-width: 233px;
+  height: 30px;
+  padding: 0 20px;
+  border-radius: 15px;
+  border: none;
+  text-align: center;
+  font-size: 9.3px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal !important;
+}
+.popup .p-right .form-group .form-control::placeholder {
+  color: #99d6d6;
+}
+.popup .p-right .form-group .form-control:focus {
+  outline: none;
+}
+.popup .close-popup {
+  position: absolute;
+  text-align: center;
+  font-size: 24px;
+  line-height: 28px;
+  top: -5px;
+  right: -5px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #fff, linear-gradient(90deg, #ffffff 0%, #efefef 100%);
+  transform: matrix(1, 0, 0, -1, 0, 0);
+  color: #00A0B1;
+  cursor: pointer;
+  z-index: 2;
+}
+.popup .close-popup::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #fff;
+  z-index: -1;
+}
+.popup .submit-form {
+  margin-top: 7px;
+}
+
+.submit-form {
+  position: relative;
+  height: 35px;
+  background: linear-gradient(90deg, #00a0b1 0%, #666e95 55.11%, #666e95 100%);
+  color: #fff;
+  border: none;
+  border-radius: 18px;
+  padding: 0 32px;
+  font-size: 15.5px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+  cursor: pointer;
+  z-index: 2;
+}
+.submit-form::before {
+  position: absolute;
+  content: "";
+  height: 40px;
+  width: calc(100% + 5px);
+  left: -2.5px;
+  top: -2.5px;
+  border-radius: 20px;
+  background: linear-gradient(90deg, #00a0b1 0%, #666e95 55.11%, #666e95 100%);
+  z-index: -1;
+}
+.submit-form:focus {
+  outline: none;
+}
+
+.popup.popup-show {
+  visibility: visible;
+  transform: translate(-50%, -50%);
+  opacity: 1;
+}
+
+@media (max-width: 1199px) {
+  .popup .popup-content {
+    width: 377px;
+  }
+  .popup .p-left {
+    width: 100%;
+  }
+  .popup .p-left img {
+    margin: 32px 0;
+  }
+  .popup .p-right {
+    padding: 16px 27px 20px;
+  }
+
+  .popup-content {
+    flex-direction: column;
+  }
+}
+@media (max-width: 399px) {
+  .popup .popup-content {
+    width: calc(100vw - 30px);
+  }
+}
+.open-popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.body-overlay::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.1);
+}

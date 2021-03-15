@@ -1,0 +1,162 @@
+@font-face {
+	font-family: 'Philosopher';
+	src: url('../font/Philosopher/Philosopher-Bold.ttf') format('truetype');
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: 'Poppins';
+	src: url('../font/Poppins/Poppins-Regular.ttf') format('truetype');
+	font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../font/Poppins/Poppins-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+}
+
+@font-face {
+	font-family: 'Poppins';
+	src: url('../font/Poppins/Poppins-Bold.ttf') format('truetype');
+	font-weight: 700;
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../font/Montserrat/Montserrat-Regular.otf') format('opentype');
+	font-weight: 400;
+}
+
+
+$f1: "Philosopher", sans-serif;
+$f2: "Poppins", sans-serif;
+$f3: "Montserrat", sans-serif;
+$c-bg: #21201e;
+$c-text: #272727;
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: $f2;
+    margin: 0;
+    color: $c-text;
+    font-size: 1rem;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.container {
+    margin: auto;
+}
+
+ul {
+    padding: 0;
+    li {
+        list-style: none;
+    }
+}
+
+h1,h2,h3,h4,h5,p{
+    display: block;
+    margin: 0;
+    font-weight: 300;
+    line-height: 1.4;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: middle;
+    object-fit: cover;
+}
+
+.link{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+@media (min-width: 1450px) {
+    .container {
+        max-width: 1200px;
+    }
+}
+@media (min-width: 1599px) {
+    .container {
+        max-width: 1440px;
+    }
+}
+@media (min-width: 1750px) {
+    .container {
+        max-width: 1600px;
+    }
+}
+
+
+// ----------------- font size --------------------
+.fz36{
+    font-size: 36px;
+}
+
+.fz30{
+    font-size: 30px;
+}
+
+.fz20{
+    font-size: 20px;
+}
+
+.fz18{
+    font-size: 18px;
+}
+
+@media (max-width: 1199px) {
+    .fz36{
+        font-size: 30px;
+    }
+    
+    .fz30{
+        font-size: 24px;
+    }
+    
+    .fz20{
+        font-size: 16px;
+    }
+    
+    .fz18{
+        font-size: 18px;
+    }
+}
